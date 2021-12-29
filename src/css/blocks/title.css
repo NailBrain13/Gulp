@@ -1,0 +1,12 @@
+.title {
+  color: red;
+  font-size: 30px;
+  text-decoration: uppercase;
+}
+
+@media (max-width: 720px) {
+  .title {
+    color: white;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,29 @@
+$base-font-size: 20px;
+@font-face {
+  font-family: 'Roboto';
+  src: url('../font/Taraxacum.woff') format('woff');
+}
+
+@mixin ph {
+  @media (max-width: 720px) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $base-font-size;
+  font-family: Roboto;
+  line-height: 1.5;
+
+  @include ph {
+    color: orange;
+    background-color: green;
+    background-image: url('../img/code.jpeg');
+  }
+}
+
+@import 'blocks/*.scss';

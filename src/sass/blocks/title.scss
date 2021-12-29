@@ -1,0 +1,10 @@
+.title {
+  color: red;
+  font-size: 30px;
+  text-decoration: uppercase;
+
+  @include ph {
+    color: white;
+    font-weight: bold;
+  }
+}
